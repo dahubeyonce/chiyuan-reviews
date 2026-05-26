@@ -1,0 +1,52 @@
+[
+  {
+    "store": "小巨蛋",
+    "rating": 4.7,
+    "count": 1097
+  },
+  {
+    "store": "師大",
+    "rating": 4.6,
+    "count": 1048
+  },
+  {
+    "store": "松江",
+    "rating": 4.6,
+    "count": 961
+  },
+  {
+    "store": "忠孝",
+    "rating": 4.8,
+    "count": 1187
+  },
+  {
+    "store": "內湖",
+    "rating": 4.5,
+    "count": 563
+  },
+  {
+    "store": "板橋",
+    "rating": 4.6,
+    "count": 658
+  },
+  {
+    "store": "逢甲",
+    "rating": 4.4,
+    "count": 564
+  },
+  {
+    "store": "北車",
+    "rating": 4.7,
+    "count": 331
+  },
+  {
+    "store": "一中",
+    "rating": 4.6,
+    "count": 183
+  },
+  {
+    "store": "光華",
+    "rating": 4.9,
+    "count": 47
+  }
+]

@@ -1,0 +1,73 @@
+name: Scrape Google Maps reviews
+
+# 每天 00:00 UTC = 台北時間每日上午 08:00
+# (台北 UTC+8 全年無 DST,所以時差固定)
+# 改頻率: 編下面的 cron 字串 (https://crontab.guru/)
+# 注意 GitHub Actions 排程在高峰時段可能延遲 5-30 分鐘,不影響結果。
+# 也可以從 Actions tab 手動觸發。
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 允許 commit 回 repo
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browser
+        run: |
+          playwright install --with-deps chromium
+
+      - name: Run scraper
+        run: |
+          python scraper.py --max 200
+
+      - name: Show summary
+        run: |
+          echo "--- last_updated ---"
+          cat data/last_updated.txt
+          echo
+          echo "--- store_ratings ---"
+          cat data/store_ratings.json
+          echo
+          echo "--- reviews.json size ---"
+          wc -l data/reviews.json
+
+      - name: Commit & push if data changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(data): refresh reviews $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Upload artifact (backup, even if push fails)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reviews-${{ github.run_id }}
+          path: data/
+          retention-days: 30

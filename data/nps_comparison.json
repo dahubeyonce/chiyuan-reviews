@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-05-25T09:23:46",
+  "gm_sample": {
+    "promoter": 1665,
+    "detractor": 80
+  },
+  "nps_sample_size": 1052,
+  "comparison": [
+    {
+      "category": "產品品質",
+      "gm_promoter_pct": 70.3,
+      "gm_detractor_pct": 70.0,
+      "gm_promoter_n": 1170,
+      "gm_detractor_n": 56,
+      "nps_promoter_pct": 72.0,
+      "nps_detractor_pct": 3.3
+    },
+    {
+      "category": "服務體驗",
+      "gm_promoter_pct": 11.1,
+      "gm_detractor_pct": 47.5,
+      "gm_promoter_n": 185,
+      "gm_detractor_n": 38,
+      "nps_promoter_pct": 34.0,
+      "nps_detractor_pct": 2.0
+    },
+    {
+      "category": "品牌形象",
+      "gm_promoter_pct": 5.8,
+      "gm_detractor_pct": 23.8,
+      "gm_promoter_n": 97,
+      "gm_detractor_n": 19,
+      "nps_promoter_pct": 14.0,
+      "nps_detractor_pct": 0.4
+    },
+    {
+      "category": "定價價格",
+      "gm_promoter_pct": 2.5,
+      "gm_detractor_pct": 21.2,
+      "gm_promoter_n": 41,
+      "gm_detractor_n": 17,
+      "nps_promoter_pct": 6.0,
+      "nps_detractor_pct": 1.4
+    },
+    {
+      "category": "營運體驗",
+      "gm_promoter_pct": 1.4,
+      "gm_detractor_pct": 26.2,
+      "gm_promoter_n": 24,
+      "gm_detractor_n": 21,
+      "nps_promoter_pct": 19.0,
+      "nps_detractor_pct": 1.4
+    },
+    {
+      "category": "行銷吸引",
+      "gm_promoter_pct": 5.8,
+      "gm_detractor_pct": 7.5,
+      "gm_promoter_n": 97,
+      "gm_detractor_n": 6,
+      "nps_promoter_pct": 5.0,
+      "nps_detractor_pct": 0.4
+    }
+  ]
+}

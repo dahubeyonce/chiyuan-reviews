@@ -1,0 +1,15 @@
+{
+  "_comment": "店家清單。要新增/刪除/改名分店,只動這個檔案就好。'name' 對應 dashboard 顯示名稱、'url' 是 Google Maps 短連結 (maps.app.goo.gl) 或完整 URL 都可以。",
+  "stores": [
+    { "name": "小巨蛋", "url": "https://maps.app.goo.gl/8rNKVrNRDbpMtoYz6" },
+    { "name": "師大",   "url": "https://maps.app.goo.gl/o4oCRmpPFx1TdjZd6" },
+    { "name": "松江",   "url": "https://maps.app.goo.gl/kX5oPX4XhtBG4GcC7" },
+    { "name": "忠孝",   "url": "https://maps.app.goo.gl/iYrsTQ6f8f2447pm6" },
+    { "name": "內湖",   "url": "https://maps.app.goo.gl/CA1rGW42ECqdEoda7" },
+    { "name": "板橋",   "url": "https://maps.app.goo.gl/yqZ7jMKmRf4gDdTW9" },
+    { "name": "逢甲",   "url": "https://maps.app.goo.gl/VGEdYKQ3d5pvQL4H7" },
+    { "name": "北車",   "url": "https://maps.app.goo.gl/7UGHepKiCGaA8Mhh6" },
+    { "name": "一中",   "url": "https://maps.app.goo.gl/9SNDkZaZUf7oK6ZG7" },
+    { "name": "光華",   "url": "https://maps.app.goo.gl/CbQgSbthHdjxwaYV7" }
+  ]
+}
