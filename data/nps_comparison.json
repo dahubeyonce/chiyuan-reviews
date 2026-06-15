@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-05-28T07:16:37",
+  "generated_at": "2026-06-15T06:07:35",
   "gm_sample": {
-    "promoter": 1672,
-    "detractor": 81
+    "promoter": 1663,
+    "detractor": 102
   },
   "nps_sample_size": 1052,
   "comparison": [
     {
       "category": "產品品質",
-      "gm_promoter_pct": 70.2,
-      "gm_detractor_pct": 69.1,
-      "gm_promoter_n": 1173,
-      "gm_detractor_n": 56,
+      "gm_promoter_pct": 70.4,
+      "gm_detractor_pct": 75.5,
+      "gm_promoter_n": 1171,
+      "gm_detractor_n": 77,
       "nps_promoter_pct": 72.0,
       "nps_detractor_pct": 3.3
     },
     {
       "category": "服務體驗",
-      "gm_promoter_pct": 10.8,
-      "gm_detractor_pct": 46.9,
-      "gm_promoter_n": 180,
-      "gm_detractor_n": 38,
+      "gm_promoter_pct": 10.9,
+      "gm_detractor_pct": 46.1,
+      "gm_promoter_n": 181,
+      "gm_detractor_n": 47,
       "nps_promoter_pct": 34.0,
       "nps_detractor_pct": 2.0
     },
     {
       "category": "品牌形象",
-      "gm_promoter_pct": 5.8,
-      "gm_detractor_pct": 23.5,
-      "gm_promoter_n": 97,
-      "gm_detractor_n": 19,
+      "gm_promoter_pct": 5.5,
+      "gm_detractor_pct": 21.6,
+      "gm_promoter_n": 92,
+      "gm_detractor_n": 22,
       "nps_promoter_pct": 14.0,
       "nps_detractor_pct": 0.4
     },
     {
       "category": "定價價格",
-      "gm_promoter_pct": 2.8,
-      "gm_detractor_pct": 22.2,
-      "gm_promoter_n": 46,
-      "gm_detractor_n": 18,
+      "gm_promoter_pct": 3.1,
+      "gm_detractor_pct": 25.5,
+      "gm_promoter_n": 52,
+      "gm_detractor_n": 26,
       "nps_promoter_pct": 6.0,
       "nps_detractor_pct": 1.4
     },
     {
       "category": "營運體驗",
       "gm_promoter_pct": 1.3,
-      "gm_detractor_pct": 25.9,
-      "gm_promoter_n": 22,
-      "gm_detractor_n": 21,
+      "gm_detractor_pct": 19.6,
+      "gm_promoter_n": 21,
+      "gm_detractor_n": 20,
       "nps_promoter_pct": 19.0,
       "nps_detractor_pct": 1.4
     },
     {
       "category": "行銷吸引",
-      "gm_promoter_pct": 5.5,
-      "gm_detractor_pct": 7.4,
-      "gm_promoter_n": 92,
-      "gm_detractor_n": 6,
+      "gm_promoter_pct": 5.7,
+      "gm_detractor_pct": 6.9,
+      "gm_promoter_n": 95,
+      "gm_detractor_n": 7,
       "nps_promoter_pct": 5.0,
       "nps_detractor_pct": 0.4
     }
