@@ -430,7 +430,10 @@ async def scrape_store(
     try:
         # Step 1: load the short URL to resolve to the canonical /place/ URL
         await page.goto(url, wait_until="domcontentloaded", timeout=PAGE_LOAD_TIMEOUT_MS)
-        await page.wait_for_load_state("networkidle", timeout=20_000)
+        try:
+            await page.wait_for_load_state("networkidle", timeout=20_000)
+        except PWTimeoutError:
+            pass  # Google Maps 背景請求不斷，networkidle 可能永遠達不到
         await page.wait_for_timeout(2000)
         await _accept_consent(page)
 
@@ -439,7 +442,10 @@ async def scrape_store(
         if reviews_url != page.url:
             logger.debug("Re-navigating to reviews URL: %s", reviews_url[:80])
             await page.goto(reviews_url, wait_until="domcontentloaded", timeout=PAGE_LOAD_TIMEOUT_MS)
-            await page.wait_for_load_state("networkidle", timeout=20_000)
+            try:
+                await page.wait_for_load_state("networkidle", timeout=20_000)
+            except PWTimeoutError:
+                pass  # 同上
             await page.wait_for_timeout(2000)
 
         overall_rating, overall_count = await _extract_overall_rating(page)
